@@ -63,13 +63,12 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   transition: color 0.3s;
+  position: relative;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav-link.current {
   color: #404bbf;
 }
-
 
 .nav-link.current::after {
   content: '';
@@ -81,6 +80,7 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
 }
+
 
 .contacts {
   font-style: normal;
