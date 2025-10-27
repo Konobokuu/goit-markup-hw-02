@@ -131,9 +131,6 @@ img {
 }
 
 .visually-hidden {
-  /* position: absolute; - УБРАНО */
-  /* width: 1px; - УБРАНО */
-  /* height: 1px; - УБРАНО */
   margin: -1px;
   border: 0;
   padding: 0;
@@ -155,6 +152,10 @@ img {
   text-transform: capitalize;
   color: var(--dark-color);
   letter-spacing: 0.02em;
+}
+
+.team-item {
+  background-color: #FFFFFF;
 }
 
 .team-name {
