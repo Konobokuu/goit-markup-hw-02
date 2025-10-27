@@ -66,6 +66,12 @@ img {
   position: relative;
 }
 
+/* додано: колір при hover/focus */
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
 .nav-link.current {
   color: #404bbf;
 }
@@ -80,7 +86,6 @@ img {
   background-color: #404bbf;
   border-radius: 2px;
 }
-
 
 .contacts {
   font-style: normal;
@@ -229,6 +234,7 @@ img {
   background-color: #ffffff;
 }
 
+/* цей блок можна залишити — він більше не впливає на верстку, бо .portfolio-content видалено з HTML */
 .portfolio-content {
   border: 1px solid #e7e9fc;
   border-top: none;
