@@ -1,7 +1,9 @@
+/* Reset and base styles */
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
+  margin: 0;
 }
 
 ul {
@@ -20,22 +22,31 @@ img {
   height: auto;
 }
 
-.header {
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header styles */
+.page-header {
   border-bottom: 1px solid #e7e9fc;
+}
+
+.page-header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
+  padding: 24px 15px;
 }
 
-.nav {
+.page-nav {
   display: flex;
   align-items: center;
   gap: 76px;
 }
 
-.logo,
-.footer-logo {
+.logo-link {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -43,14 +54,13 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  text-decoration: none;
 }
 
-.accent {
+.logo-accent {
   color: #2e2f42;
 }
 
-.nav-list {
+.nav-menu {
   display: flex;
   gap: 40px;
 }
@@ -61,12 +71,10 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
   transition: color 0.3s;
   position: relative;
 }
 
-/* додано: колір при hover/focus */
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
@@ -87,30 +95,31 @@ img {
   border-radius: 2px;
 }
 
-.contacts {
+/* Address styles */
+.page-address {
   font-style: normal;
 }
 
-.contacts-list {
+.contact-list {
   display: flex;
   gap: 40px;
 }
 
-.contact-link {
+.contact-item {
   color: #434455;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
   transition: color 0.3s;
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-item:hover,
+.contact-item:focus {
   color: #404bbf;
 }
 
-.hero {
+/* Hero section */
+.hero-section {
   background-color: #2e2f42;
   text-align: center;
   padding: 188px 0;
@@ -137,6 +146,7 @@ img {
   padding: 16px 32px;
   border: none;
   border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 .hero-button:hover,
@@ -144,7 +154,8 @@ img {
   background-color: #404bbf;
 }
 
-.features {
+/* Features section */
+.features-section {
   padding: 120px 0;
 }
 
@@ -153,11 +164,11 @@ img {
   gap: 24px;
 }
 
-.features-item {
+.features-card {
   width: calc((100% - 72px) / 4);
 }
 
-.features-title {
+.features-heading {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -166,14 +177,15 @@ img {
   margin-bottom: 8px;
 }
 
-.features-text {
+.features-description {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
-.team {
+/* Team section */
+.team-section {
   background-color: #f4f4fd;
   padding: 120px 0;
 }
@@ -193,13 +205,16 @@ img {
   gap: 24px;
 }
 
-.team-item {
+.team-card {
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   text-align: center;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+              0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+              0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.team-content {
+.team-info {
   padding: 32px 0;
 }
 
@@ -212,14 +227,15 @@ img {
   margin-bottom: 8px;
 }
 
-.team-role {
+.team-position {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
 
-.portfolio {
+/* Portfolio section */
+.portfolio-section {
   padding: 120px 0;
 }
 
@@ -230,14 +246,19 @@ img {
   row-gap: 48px;
 }
 
-.portfolio-item {
+.portfolio-card {
   background-color: #ffffff;
+  border: 1px solid #e7e9fc;
+  transition: box-shadow 0.3s;
 }
 
-/* цей блок можна залишити — він більше не впливає на верстку, бо .portfolio-content видалено з HTML */
+.portfolio-card:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+              0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+              0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-content {
-  border: 1px solid #e7e9fc;
-  border-top: none;
   padding: 32px 16px;
 }
 
@@ -257,7 +278,8 @@ img {
   color: #434455;
 }
 
-.footer {
+/* Footer styles */
+.page-footer {
   background-color: #2e2f42;
   padding: 100px 0;
 }
@@ -270,6 +292,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
 }
 
 .footer-accent {
@@ -284,6 +307,7 @@ img {
   margin-top: 16px;
 }
 
+/* Utility classes */
 .visually-hidden {
   position: absolute;
   width: 1px;
