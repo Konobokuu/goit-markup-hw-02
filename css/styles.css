@@ -59,6 +59,11 @@ img {
   padding: 0 15px;
 }
 
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -67,15 +72,23 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brand-color);
+  margin-right: 76px;
 }
 
 .logo-accent {
   color: var(--dark-color);
 }
 
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
 .nav-link {
   font-weight: 500;
   color: var(--dark-color);
+  display: block;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -85,6 +98,12 @@ img {
 
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-link {
@@ -123,6 +142,7 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  display: inline-block;
 }
 
 .hero-button:hover,
@@ -133,6 +153,15 @@ img {
 /* Advantages section */
 .section {
   padding: 120px 0;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-item {
+  flex-basis: calc((100% - 72px) / 4);
 }
 
 .advantages-subtitle {
@@ -176,6 +205,24 @@ img {
   letter-spacing: 0.02em;
 }
 
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-item {
+  background-color: var(--white-background-color);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+              0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+              0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  flex-basis: calc((100% - 72px) / 4);
+}
+
+.team-card-content {
+  padding: 32px 16px;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 20px;
@@ -202,6 +249,21 @@ img {
   letter-spacing: 0.02em;
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-item {
+  flex-basis: calc((100% - 48px) / 3);
+  border: 1px solid var(--accent-color);
+}
+
+.portfolio-item img {
+  width: 100%;
+}
+
 .portfolio-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -213,6 +275,7 @@ img {
 
 .portfolio-text {
   color: var(--text-color);
+  padding: 32px 16px;
 }
 
 /* Footer */
