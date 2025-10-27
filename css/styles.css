@@ -1,23 +1,7 @@
-/* Base styles */
-:root {
-  --primary-brand-color: #4d5ae5;
-  --pressed-state-color: #404bbf;
-  --dark-color: #2e2f42;
-  --success-color: #31d0aa;
-  --text-color: #434455;
-  --subtle-text-color: #8e8f99;
-  --accent-color: #e7e9fc;
-  --light-color: #f4f4fd;
-  --modal-overlay-color: rgba(46, 47, 66, 0.4);
-  --hero-background-color: rgba(46, 47, 66, 0.7);
-  --white-background-color: #ffffff;
-  --modal-background-color: #fcfcfc;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--text-color);
-  background-color: var(--white-background-color);
+  color: #434455;
+  background-color: #ffffff;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -47,9 +31,8 @@ img {
   height: auto;
 }
 
-/* Header styles */
 .header {
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .logo {
@@ -59,21 +42,21 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--primary-brand-color);
+  color: #4d5ae5;
 }
 
 .logo-accent {
-  color: var(--dark-color);
+  color: #2e2f42;
 }
 
 .nav-link {
   font-weight: 500;
-  color: var(--dark-color);
+  color: #2e2f42;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--pressed-state-color);
+  color: #404bbf;
 }
 
 .address {
@@ -81,30 +64,29 @@ img {
 }
 
 .address-link {
-  color: var(--text-color);
+  color: #434455;
 }
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--pressed-state-color);
+  color: #404bbf;
 }
 
-/* Hero section */
 .hero {
-  background-color: var(--dark-color);
+  background-color: #2e2f42;
   text-align: center;
 }
 
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
-  color: var(--white-background-color);
+  color: #ffffff;
   letter-spacing: 0.02em;
 }
 
 .hero-button {
-  background-color: var(--primary-brand-color);
-  color: var(--white-background-color);
+  background-color: #4d5ae5;
+  color: #ffffff;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -114,20 +96,19 @@ img {
 
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--pressed-state-color);
+  background-color: #404bbf;
 }
 
-/* Advantages section */
 .advantages-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--dark-color);
+  color: #2e2f42;
   letter-spacing: 0.02em;
 }
 
 .advantages-text {
-  color: var(--text-color);
+  color: #434455;
 }
 
 .visually-hidden {
@@ -140,9 +121,8 @@ img {
   overflow: hidden;
 }
 
-/* Team section */
 .team {
-  background-color: var(--light-color);
+  background-color: #f4f4fd;
 }
 
 .team-title {
@@ -150,7 +130,7 @@ img {
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  color: var(--dark-color);
+  color: #2e2f42;
   letter-spacing: 0.02em;
 }
 
@@ -162,23 +142,22 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--dark-color);
+  color: #2e2f42;
   text-align: center;
   letter-spacing: 0.02em;
 }
 
 .team-position {
-  color: var(--text-color);
+  color: #434455;
   text-align: center;
 }
 
-/* Portfolio section */
 .portfolio-title {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  color: var(--dark-color);
+  color: #2e2f42;
   letter-spacing: 0.02em;
 }
 
@@ -186,23 +165,22 @@ img {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
-  color: var(--dark-color);
+  color: #2e2f42;
   letter-spacing: 0.02em;
 }
 
 .portfolio-text {
-  color: var(--text-color);
+  color: #434455;
 }
 
-/* Footer */
 .footer {
-  background-color: var(--dark-color);
+  background-color: #2e2f42;
 }
 
 .logo-accent-footer {
-  color: var(--light-color);
+  color: #f4f4fd;
 }
 
 .footer-text {
-  color: var(--light-color);
+  color: #f4f4fd;
 }
